@@ -3,5 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "description": "Vue.JS + Parcel test"
+  "description": "Vue.JS + Parcel test",
+  "repository": "git@github.com:mibsbalsante/wtm-vue-parcel.git",
+  "author": "Mibs Balsante <mibsbalsante@ckl.io>"
 }
