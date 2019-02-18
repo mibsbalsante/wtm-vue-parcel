@@ -1,0 +1,7 @@
+{
+  "name": "wtm-vue-parcel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "Vue.JS + Parcel test"
+}
