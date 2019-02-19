@@ -7,10 +7,21 @@
   "repository": "git@github.com:mibsbalsante/wtm-vue-parcel.git",
   "author": "Mibs Balsante <mibsbalsante@ckl.io>",
   "scripts": {
-    "dev": "parcel index.js",
-    "build": "parcel build index.js"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.11.0"
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@vue/component-compiler-utils": "^2.5.2",
+    "parcel-bundler": "^1.11.0",
+    "vue-template-compiler": "^2.6.6"
+  },
+  "dependencies": {
+    "vue": "^2.6.6",
+    "vue-hot-reload-api": "^2.3.2"
+  },
+  "alias": {
+    "vue": "./node_modules/vue/dist/vue.common.js"
   }
 }
