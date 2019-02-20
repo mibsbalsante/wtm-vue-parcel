@@ -14,7 +14,8 @@ body {
 
 body,
 button,
-input {
+input,
+select {
   font-family: 'Source Sans Pro',
                 -apple-system,
                 BlinkMacSystemFont,

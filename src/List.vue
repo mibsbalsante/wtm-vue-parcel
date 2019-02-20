@@ -2,7 +2,7 @@
   <ul class="list" v-if="list.length > 0">
     <li class="item" v-for="item in list" :key="item.name">
       <div
-        :style="{width: `${item.width}px`, height: `${item.height}px`, backgroundColor: item.bgColor}"
+        :style="{width: `${item.width}px`, height: `${item.height}px`, backgroundColor: item.bgColor, border: `${item.borderWidth}px ${item.borderStyle} ${item.borderColor}`}"
       >{{item.name}}</div>
     </li>
   </ul>

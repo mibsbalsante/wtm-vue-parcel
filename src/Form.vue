@@ -16,6 +16,29 @@
       Cor de fundo
       <input class="input" type="text" v-model="options.bgColor" id="bgColor">
     </label>
+    <label class="label" for="borderWidth">
+      Tamanho da borda
+      <input
+        class="input"
+        type="number"
+        v-model.number="options.borderWidth"
+        id="borderWidth"
+      >
+    </label>
+    <label class="label" for="borderStyle">
+      Tipo da borda
+      <select class="input" v-model="options.borderStyle" id="borderStyle">
+        <option value="none">none</option>
+        <option value="dotted">dotted</option>
+        <option value="dashed">dashed</option>
+        <option value="solid">solid</option>
+        <option value="double">double</option>
+      </select>
+    </label>
+    <label class="label" for="borderColor">
+      Cor da borda
+      <input class="input" type="text" v-model="options.borderColor" id="borderColor">
+    </label>
     <button class="button">Gerar</button>
   </form>
 </template>
@@ -32,7 +55,17 @@
       }
     },
     data() {
-      return { options: { name: '', width: 200, height: 50, bgColor: 'red' } }
+      return {
+        options: {
+          name: '',
+          width: 200,
+          height: 50,
+          bgColor: 'red',
+          borderWidth: 0,
+          borderStyle: 'none',
+          borderColor: 'transparent'
+        }
+      }
     }
   }
 </script>
@@ -41,6 +74,7 @@
   .label {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 0 0;
   }
 
