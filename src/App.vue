@@ -1,14 +1,26 @@
 <template>
-  <input type="text" v-model="field">
+  <div class="app">
+    <h1 class="title">Adicione seus próprios retângulos!</h1>
+    <app-form @submit="addToList"></app-form>
+    <app-list :list="list"></app-list>
+  </div>
 </template>
 
 <script>
   import Vue from 'vue'
+  import AppForm from './Form'
+  import AppList from './List'
 
-  module.exports = {
+  export default {
     name: 'app',
+    methods: {
+      addToList: function(values) {
+        this.list.push({ ...values })
+      }
+    },
+    components: { AppForm, AppList },
     data() {
-      return { field: 'initial value' }
+      return { list: [] }
     }
   }
 </script>
