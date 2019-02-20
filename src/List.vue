@@ -8,7 +8,7 @@
       <pre class="pre">{
         <code class="code">      width: {{item.width}}px,
         height: {{item.height}}px,
-        backgroundColor: item.bgColor,
+        background-color: {{item.bgColor}},
         border: {{item.borderWidth}}px {{item.borderStyle}} {{item.borderColor}}</code>
       }</pre>
     </li>
