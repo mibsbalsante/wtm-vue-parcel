@@ -24,3 +24,14 @@
     }
   }
 </script>
+
+<style scoped>
+  .app {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .title {
+    text-align: center;
+  }
+</style>
