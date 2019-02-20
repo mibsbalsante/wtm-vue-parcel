@@ -53,6 +53,7 @@
     padding: 12px 40px;
     width: 100%;
     margin: 30px 0;
+    cursor: pointer;
   }
 
   .input,
