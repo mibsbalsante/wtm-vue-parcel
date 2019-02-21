@@ -15,7 +15,7 @@
     name: 'app',
     methods: {
       addToList: function(values) {
-        this.list.push({ ...values })
+        this.list.unshift({ ...values })
       }
     },
     components: { AppForm, AppList },
